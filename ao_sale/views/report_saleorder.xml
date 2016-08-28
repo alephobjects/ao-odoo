@@ -2,11 +2,13 @@
 <openerp>
 <data>
     <template id="report_saleorder_document" inherit_id="sale.report_saleorder_document">
-        <xpath expr="//p[@t-if='o.payment_term.note']" position="after">
+        <xpath expr="//p[@t-field='o.note']" position="after">
             <p>
                 This quotation is valid for 30 days from date of issuance above.<br/>
                 If the quote has expired and a new quote is needed, please contact sales@lulzbot.com.
             </p>
+        </xpath>
+        <xpath expr="//p[@t-if='o.payment_term.note']" position="after">
             <p>
                 All Payments to be made in US Dollars.<br/>
                 $25.00 Wire Fee Charge added to all International Wire Transactions.
