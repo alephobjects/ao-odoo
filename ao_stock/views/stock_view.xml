@@ -10,6 +10,9 @@
                 <field name="location_dest_id" position="before">
                     <field name="location_id"/>
                 </field>
+                <field name="product_uom" position="attributes">
+                    <attribute name="string">UoM</attribute>
+                </field>
             </field>
         </record>
 
